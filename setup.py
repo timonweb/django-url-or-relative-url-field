@@ -9,6 +9,7 @@ setup(
     version='0.1.2',
     description="""This package provides a Django model field that can store both absolute and relative URLs""",
     long_description=readme,
+    long_description_content_type="text/markdown",
     author='Timur Kamanin',
     author_email='tim@timonweb.com',
     url='https://timonweb.com/oss/django-url-or-relative-url-field/',
