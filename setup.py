@@ -6,7 +6,7 @@ with open('README.md') as readme_file:
 
 setup(
     name='django-url-or-relative-url-field',
-    version='0.1.2',
+    version='0.2.0',
     description="""This package provides a Django model field that can store both absolute and relative URLs""",
     long_description=readme,
     long_description_content_type="text/markdown",
