@@ -16,4 +16,8 @@ class URLOrRelativeURLFormField(URLField):
                 # We need to strip it out and convert to correct relative url
                 # before we pass it down the line.
                 value = value[7:]
+            if value.startswith('https:///'):
+                # Same for https since django 5 assumes secure scheme https
+                # See https://docs.djangoproject.com/en/5.0/ref/forms/fields/#urlfield
+                value = value[8:]
         return value
